@@ -1,3 +1,5 @@
 dnspython
 colorama
 pymongo
+socket
+os
