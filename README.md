@@ -1,2 +1,1 @@
-# MongoScaper
-<img src=/img/mongoscaper.png>
+<br/><img src=/img/mongoscaper.png>
