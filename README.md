@@ -21,4 +21,4 @@ pip3 install -r requirements.txt
 ```
 ## Practice
 Here is the client-side CLI
-<br><img src=/img/cli.png><br>
+<br><img src=/img/cli.gif><br>
