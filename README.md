@@ -22,7 +22,7 @@ pip3 install -r requirements.txt
 # Practice
 **Here is the client-side VENV**<br>
 <br><img src=/img/cli.gif><br>
-## Database Handling
+## Database Handler
 <br><img src=/img/db.gif><br>
 ### Atlas MongoDB Result
 * When a database is created MongoDB need to set up a collection so i have referenced it to "defaultcollection"<br>
@@ -30,7 +30,7 @@ pip3 install -r requirements.txt
 mycol = dbcreated.create_collection("defaultcollection")
 ```
 <br><img src=/img/dbcreated.png><br>
-## Collection Handling
+## Collection Handler
 <br><img src=/img/coll.gif><br>
 * This function has been called for delete the collection<br>
 ```py
@@ -41,3 +41,4 @@ exec(mydeletecol)
 ```py
 output = str(a).replace('[','').replace(']','').replace(', ', '\n').replace("'",'')
 ```
+## Document Handler
