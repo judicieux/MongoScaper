@@ -1,5 +1,5 @@
 <br><img src=/img/mongoscaper.png><br>
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" height="40" length="40">        <img src="https://forthebadge.com/images/badges/made-with-python.svg" height="40" length="40">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" height="40" length="40"> <img src="https://forthebadge.com/images/badges/made-with-python.svg" height="40" length="40"> <img src="https://forthebadge.com/images/badges/fuck-it-ship-it.svg" height="40" length="40">
 # Quick Start
 MongoScraper is a powerful interpreter that can manipulate objects and interfere with MongoDB databases
 # Functions
