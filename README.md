@@ -8,7 +8,12 @@ Concretely what can it do ?
 * Delete Databases
 * See Databases
 ### Collection Side
-* 
+* Create Collections
+* Delete Collections 
+* See Collections 
+### Document Side
+* Create Documents
+* See Documents
 ## Requirements
 First install the requirements to not miss the external libraries 
 ```python3
