@@ -32,6 +32,7 @@ mycol = dbcreated.create_collection("defaultcollection")
 <br><img src=/img/dbcreated.png><br>
 ## Collection Handling
 <br><img src=/img/coll.gif><br>
+* This function has been called for delete the collection<br>
 ```py
 mydeletecol = str("mydb." + deletecoll + ".drop()")
 exec(mydeletecol)
