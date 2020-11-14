@@ -43,7 +43,7 @@ def database():
                 dbconnect = pymongo.MongoClient("mongodb+srv://" + myclientuser + ":7vDyWYPW2VfXuihM@cluster1.naysc.mongodb.net/" + createdatabase + "?retryWrites=true&w=majority")
                 dbcreated = dbconnect[createdatabase]
                 mycol = dbcreated.create_collection("defaultcollection")
-                print("Created : " + createdatabase)
+                print(f"{Fore.GREEN}Created : " + createdatabase)
 
             elif databaseinput == "switchdb":
                 login()
@@ -86,13 +86,13 @@ def collection():
             elif collectioninput == "createcoll":
                 createcoll = input(f"{Fore.BLUE}[+] Name [+] > ")
                 mycol = mydb.create_collection(createcoll)
-                print(f"{Fore.YELLOW}Added : " + createcoll)
+                print(f"{Fore.GREEN}Added : " + createcoll)
 
             elif collectioninput == "deletecoll":
                 deletecoll = str(input(f"{Fore.BLUE}[+] Name [+] > "))
                 mydeletecol = str("mydb." + deletecoll + ".drop()")
                 exec(mydeletecol)
-                print(f"{Fore.YELLOW}Deleted : " + deletecoll)
+                print(f"{Fore.GREEN}Deleted : " + deletecoll)
 
             elif collectioninput == "seecoll":
                 a = mydb.list_collection_names()
@@ -131,9 +131,8 @@ def document():
                 docobjectattribut = str(input("[+] Attribute [+] > "))
                 doc = {"_id": docid, docobject: docobjectattribut}
                 d = mycol.insert_one(doc)
-                print(f"\n{Fore.BLUE}[+] Documents [+]")
-                print(f"{Fore.YELLOW}")
-                print(f"{Fore.YELLOW}" + doc)
+                print(f"\n{Fore.GREEN}Document Added : ")
+                print(doc)
                 print("")
             elif documentinput == "deletedoc":
                 collchoice = str(input("[+] Collection Name [+] > "))
@@ -143,6 +142,8 @@ def document():
                 docobjectattribut = str(input("[+] Attribute [+] > "))
                 doc = {"_id": docid, docobject: docobjectattribut}
                 b = mycol.insert_one(doc)
+                print(f"{Fore.YELLOW}")
+                print(doc)
             elif documentinput == "seedoc":
                 collchoice = str(input("[+] Collection Name [+] > "))
                 mycol = mydb[collchoice]
@@ -165,7 +166,7 @@ def document():
 
 def start():
     hostname = socket.gethostname()
-    startinput = input(f"{Fore.RED}MongoScaper" + f"{Fore.BLUE}@" + f"{Fore.RED}" + hostname + f"{Fore.BLUE}~$ ")
+    startinput = input(f"{Fore.RED} MongoScaper" + f"{Fore.BLUE}@" + f"{Fore.RED}" + hostname + f"{Fore.BLUE}~$ ")
     startactif = True
     while startactif == True:
         try:
