@@ -20,5 +20,7 @@ First install the requirements to not miss the external libraries
 pip3 install -r requirements.txt
 ```
 # Practice
-Here is the client-side CLI
+**Here is the client-side VENV**<br>
 <br><img src=/img/cli.gif><br>
+## Database Handling
+<br><img src=/img/db.gif><br>
