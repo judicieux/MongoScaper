@@ -30,3 +30,5 @@ pip3 install -r requirements.txt
 mycol = dbcreated.create_collection("defaultcollection")
 ```
 <br><img src=/img/dbcreated.png><br>
+## Collection Handling
+<br><img src=/img/coll.gif><br>
