@@ -37,7 +37,6 @@ mycol = dbcreated.create_collection("defaultcollection")
 mydeletecol = str("mydb." + deletecoll + ".drop()")
 exec(mydeletecol)
 ```
-<br>
 * MongoDB use the JSON format for stock the collections and documents so I developed this function to clear up the display characters of the table<br>
 ```py
 output = str(a).replace('[','').replace(']','').replace(', ', '\n').replace("'",'')
