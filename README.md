@@ -1,7 +1,7 @@
 <br><img src=/img/mongoscaper.png><br>
 # Quick Start
 MongoScraper is a powerful interpreter that can manipulate objects and interfere with MongoDB databases
-## Functions
+# Functions
 Concretely what can it do ?
 ### Database Side
 * Create Databases
@@ -14,11 +14,11 @@ Concretely what can it do ?
 ### Document Side
 * Create Documents
 * See Documents
-## Requirements
+# Requirements
 First install the requirements to not miss the external libraries 
 ```python3
 pip3 install -r requirements.txt
 ```
-## Practice
+# Practice
 Here is the client-side CLI
 <br><img src=/img/cli.gif><br>
