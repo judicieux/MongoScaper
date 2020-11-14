@@ -19,3 +19,6 @@ First install the requirements to not miss the external libraries
 ```python3
 pip3 install -r requirements.txt
 ```
+## Practice
+Here is the client-side CLI
+<img src=/img/cli.png><br>
