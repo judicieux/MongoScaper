@@ -24,5 +24,5 @@ pip3 install -r requirements.txt
 <br><img src=/img/cli.gif><br>
 ## Database Handling
 <br><img src=/img/db.gif><br>
-### Atlas MongoDB Result<br>
+### Atlas MongoDB Result
 <br><img src=/img/dbcreated.png><br>
