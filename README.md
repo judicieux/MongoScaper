@@ -24,5 +24,5 @@ pip3 install -r requirements.txt
 <br><img src=/img/cli.gif><br>
 ## Database Handling
 <br><img src=/img/db.gif><br>
-**When the database is created you can see it in this format on Atlas MongoDB**<br>
+### Atlas MongoDB Result<br>
 <br><img src=/img/dbcreated.png><br>
