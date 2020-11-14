@@ -1,3 +1,4 @@
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" height="40" length="40">        <img src="https://forthebadge.com/images/badges/made-with-python.svg" height="40" length="40">
 <br><img src=/img/mongoscaper.png><br>
 # Quick Start
 MongoScraper is a powerful interpreter that can manipulate objects and interfere with MongoDB databases
