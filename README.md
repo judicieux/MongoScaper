@@ -16,7 +16,7 @@ MongoScraper is a powerful interpreter that can manipulate objects and interfere
 * See Documents
 # Requirements
 First install the requirements to not miss the external libraries 
-```py
+```py3
 pip3 install -r requirements.txt
 ```
 # Practice
@@ -26,19 +26,25 @@ pip3 install -r requirements.txt
 <br><img src=/img/db.gif><br>
 ### Atlas MongoDB Result
 * When a database is created MongoDB need to set up a collection so i have referenced it to "defaultcollection"<br>
-```py
+```py3
 mycol = dbcreated.create_collection("defaultcollection")
 ```
 <br><img src=/img/dbcreated.png><br>
 ## Collection Handler
 <br><img src=/img/coll.gif><br>
 * This function has been called for delete the collection<br>
-```py
+```py3
 mydeletecol = str("mydb." + deletecoll + ".drop()")
 exec(mydeletecol)
 ```
 * MongoDB use the JSON format for stock the collections and documents so I developed this function to clear up the display characters of the table<br>
-```py
+```py3
 output = str(a).replace('[','').replace(']','').replace(', ', '\n').replace("'",'')
 ```
 ## Document Handler
+<br><img src=/img/doc.gif><br>
+* This function is used for the creation of the Document<br>
+```py3
+doc = {"_id": docid, docobject: docobjectattribut}
+d = mycol.insert_one(doc)
+```
