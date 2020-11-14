@@ -25,5 +25,8 @@ pip3 install -r requirements.txt
 ## Database Handling
 <br><img src=/img/db.gif><br>
 ### Atlas MongoDB Result
-* When a database is created MongoDB need to set up a collection so i have referenced it to "defaultcollection"
+* When a database is created MongoDB need to set up a collection so i have referenced it to "defaultcollection"<br>
+```py
+mycol = dbcreated.create_collection("defaultcollection")
+```
 <br><img src=/img/dbcreated.png><br>
