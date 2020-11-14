@@ -16,7 +16,7 @@ Concretely what can it do ?
 * See Documents
 # Requirements
 First install the requirements to not miss the external libraries 
-```python3
+```py
 pip3 install -r requirements.txt
 ```
 # Practice
@@ -24,3 +24,5 @@ pip3 install -r requirements.txt
 <br><img src=/img/cli.gif><br>
 ## Database Handling
 <br><img src=/img/db.gif><br>
+**When the database is created you can see it in this format on Atlas MongoDB**<br>
+<br><img src=/img/dbcreated.png><br>
