@@ -2,7 +2,7 @@
 # Quick Start
 MongoScraper is a powerful interpreter that can manipulate objects and interfere with MongoDB databases
 # Functions
-Concretely what can it do ?
+**Concretely what can it do ?*
 ### Database Side
 * Create Databases
 * Delete Databases
