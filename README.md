@@ -48,3 +48,10 @@ output = str(a).replace('[','').replace(']','').replace(', ', '\n').replace("'",
 doc = {"_id": docid, docobject: docobjectattribut}
 d = mycol.insert_one(doc)
 ```
+### Atlas MongoDB Result
+<br><img src=/img/doccreated.png><br>
+* We can see the JSON format
+```json
+_id:1
+tempoobject:"attributerandom"
+```
