@@ -38,6 +38,7 @@ def database():
                 """
                 print(f"{Fore.YELLOW}" + a)
                 database()
+                
             elif databaseinput == "createdb":
                 createdatabase = str(input("[+] Name [+] : "))
                 dbconnect = pymongo.MongoClient("mongodb+srv://" + myclientuser + ":7vDyWYPW2VfXuihM@cluster1.naysc.mongodb.net/" + createdatabase + "?retryWrites=true&w=majority")
@@ -111,8 +112,10 @@ def collection():
 
 def document():
     documentactif = True
+    
     while documentactif == True:
         documentinput = str(input(f"{Fore.RED}[Document] > "))
+        
         try:
             if documentinput == "help":
                 a = """
@@ -123,6 +126,7 @@ def document():
                             """
                 print(f"{Fore.YELLOW}" + a)
                 document()
+
             elif documentinput == "createdoc":
                 collchoice = str(input("[+] Collection Name [+] > "))
                 mycol = mydb[collchoice]
@@ -134,6 +138,7 @@ def document():
                 print(f"\n{Fore.GREEN}Document Added : ")
                 print(doc)
                 print("")
+
             elif documentinput == "deletedoc":
                 collchoice = str(input("[+] Collection Name [+] > "))
                 mycol = mydb[collchoice]
@@ -144,6 +149,7 @@ def document():
                 b = mycol.insert_one(doc)
                 print(f"{Fore.YELLOW}")
                 print(doc)
+
             elif documentinput == "seedoc":
                 collchoice = str(input("[+] Collection Name [+] > "))
                 mycol = mydb[collchoice]
@@ -152,15 +158,20 @@ def document():
                     print(f"{Fore.YELLOW}")
                     print(x)
                     print("")
+
             elif documentinput == "exit":
                 start()
+
             else:
                 document()
+
         except pymongo.errors.InvalidName:
             print("Collection not found")
             document()
+
         except TypeError:
             document()
+
         except ValueError:
             document()
 
@@ -168,6 +179,7 @@ def start():
     hostname = socket.gethostname()
     startinput = input(f"{Fore.RED} MongoScaper" + f"{Fore.BLUE}@" + f"{Fore.RED}" + hostname + f"{Fore.BLUE}~$ ")
     startactif = True
+
     while startactif == True:
         try:
             if startinput == "help":
@@ -179,35 +191,48 @@ def start():
                 """
                 print(f"{Fore.YELLOW}" + a)
                 start()
+
             elif startinput == "db":
                 database()
+
             elif startinput == "coll":
                 collection()
+
             elif startinput == "doc":
                 document()
+
             elif startinput == "clear":
                 clear()
+
             elif startinput == "exit":
                 exit()
+
             else:
                 start()
+
         except SyntaxError:
             start()
+
         except ValueError:
             start()
 
 def login():
     global myclientuser
     myclientuser = str(input(f"{Fore.RED}[Username] > "))
+    
     global myclientdatabase
     myclientdatabase = str(input(f"{Fore.RED}[Database] > "))
+    
     global myclient
     myclient = pymongo.MongoClient("mongodb+srv://" + myclientuser + ":7vDyWYPW2VfXuihM@cluster1.naysc.mongodb.net/" + myclientdatabase + "?retryWrites=true&w=majority")
+    
     global mydb
     mydb = myclient[myclientdatabase]
     clear()
+    
     try:
         a = myclient.list_database_names()
+        
     except pymongo.errors.OperationFailure:
         print(f"{Fore.RED}[+] User and Database not found [+]")
         exit()
