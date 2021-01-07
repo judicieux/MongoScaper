@@ -16,7 +16,7 @@ def logo():
     ██║ ╚═╝ ██║╚██████╔╝██║ ╚████║╚██████╔╝╚██████╔╝███████║╚██████╗██║  ██║██║     ███████╗██║  ██║
     ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝
 
-                                [{Fore.BLUE}+{Fore.RED}] By goosebumps [{Fore.BLUE}+{Fore.RED}]
+                                [{Fore.BLUE}+{Fore.RED}] By hypostat1c [{Fore.BLUE}+{Fore.RED}]
                      [{Fore.BLUE}+{Fore.RED}] To see manual of commands do "help" [{Fore.BLUE}+{Fore.RED}]   
 """
     print(logo)
